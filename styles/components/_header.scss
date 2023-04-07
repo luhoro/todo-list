@@ -1,0 +1,51 @@
+@import '../abstract/base';
+@import '../abstract/variables';
+
+.container {
+   width: 100%;
+   max-width: 600px;
+
+}
+
+.todolist {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+
+   margin-top: 50px;
+
+   &__title {
+      font-size: 1.5rem;
+      font-family: $font-title;
+      text-align: center;
+   }
+   &__input {
+      padding: 10px;
+      text-align: center;
+      
+      #inputTask {
+         text-align: center;
+         padding: 5px 0;
+         width: 250px;
+         border: 1px solid gray;
+         border-radius: 12px;
+         
+         &:focus {
+            border: none;
+            box-shadow: 1px 1px 5px 5px black;
+         }
+      }
+   }
+   &__list {
+
+      .list {
+         list-style: none;
+
+         li{
+            display: flex;
+            justify-content: space-between;
+         }
+      }
+      
+   }
+}
