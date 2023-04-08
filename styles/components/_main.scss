@@ -1,0 +1,100 @@
+@import '../abstract/base';
+@import '../abstract/variables';
+
+
+.todolist {
+   width: 80%;
+   max-width: 650px;
+   margin: 0 auto;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin-top: 50px;
+   &__title {
+      width: 100%;
+      font-size: 1.5rem;
+      font-family: $font-title;
+      text-align: center;
+      cursor: default;
+   }
+   &__input {
+      width: 100%;
+      text-align: center;
+      padding: 10px 0;
+      #inputTask {
+         font-family: $font-text;
+         width: 100%;
+         text-align: center;
+         padding: 0.5rem 0;
+         border: 1px solid gray;
+         border-radius: 15px;
+         &:focus {
+            outline: none;
+            box-shadow: 1px 1px 5px 1px rgb(163, 163, 163);
+         }
+      }
+   }
+   &__list {
+      font-family: $font-text;
+      width: 100%;
+      .list {
+         list-style: none;
+         li{
+            border: 1px solid rgb(168, 168, 168);
+            border-radius: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0.8rem 0;
+            padding: 0.5rem 0.8rem;
+            transition: box-shadow 250ms ease;
+            cursor: default;
+
+            &.done {
+               text-decoration: line-through;
+            }
+            // &.done .check{
+               
+            // }
+            &.hidden {
+               display: none;
+            }
+            
+            &:hover {
+               box-shadow: 1px 1px 5px  #afafaf;
+            }
+            &:hover button.remove {
+               opacity: 1;
+            }
+            .check {
+               border-radius: 50%;
+               width: 15px;
+               height: 15px;
+               background-color: #bbbbbb;
+               cursor: pointer;
+               &:hover {
+                  background-color: #a3a3a3;
+               }
+            }
+
+            button.remove {
+               border: none;
+               background-color: #ffadad;
+               width: 15px;
+               height: 15px;
+               border-radius: 50%;
+               opacity: 0;
+               transition: opacity 250ms ease-in-out;
+               cursor: pointer;
+               &:hover {
+                  background-color: #fa8484;
+               }
+               &:active {
+                  border: 1px solid #818181;
+               }
+            }
+         }
+      }
+      
+   }
+}
