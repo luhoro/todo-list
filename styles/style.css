@@ -10,14 +10,24 @@
 
 /* FONTS */
 /* COLORS */
+@keyframes collapseItem {
+  0% {
+    transform: rotateX(0deg);
+  }
+  100% {
+    transform: rotateX(-90deg);
+  }
+}
 .todolist {
+  font-family: "Roboto Mono", monospace;
   width: 80%;
   max-width: 650px;
+  height: 100vh;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 50px;
+  padding-top: 50px;
 }
 .todolist__title {
   width: 100%;
@@ -44,7 +54,6 @@
   box-shadow: 1px 1px 5px 1px rgb(163, 163, 163);
 }
 .todolist__list {
-  font-family: "Roboto Mono", monospace;
   width: 100%;
 }
 .todolist__list .list {
@@ -59,10 +68,25 @@
   margin: 0.8rem 0;
   padding: 0.5rem 0.8rem;
   transition: box-shadow 250ms ease;
+  position: relative;
   cursor: default;
 }
 .todolist__list .list li.done {
   text-decoration: line-through;
+}
+.todolist__list .list li.done .check {
+  background-color: #868686;
+}
+.todolist__list .list li.done .check:after {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background-color: #6bc46b;
+  top: 14px;
+  left: 16px;
 }
 .todolist__list .list li.hidden {
   display: none;
@@ -81,7 +105,7 @@
   cursor: pointer;
 }
 .todolist__list .list li .check:hover {
-  background-color: #a3a3a3;
+  background-color: #868686;
 }
 .todolist__list .list li button.remove {
   border: none;
@@ -97,5 +121,26 @@
   background-color: #fa8484;
 }
 .todolist__list .list li button.remove:active {
-  border: 1px solid #818181;
+  background-color: #bb6767;
+}
+.todolist__list .list li.removed {
+  animation: collapseItem 300ms ease-out;
+}
+.todolist__list .list li.hidden {
+  display: none;
+}
+.todolist__footer {
+  width: 100%;
+  height: 30px;
+  text-align: center;
+}
+.todolist__footer span {
+  color: #868686;
+  font-size: 0.7rem;
+}
+.todolist__footer span a {
+  color: #5f5f5f;
+}
+.todolist__footer span a:visited {
+  color: #34343d;
 }/*# sourceMappingURL=style.css.map */
