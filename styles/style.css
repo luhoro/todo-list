@@ -20,7 +20,7 @@
 }
 .todolist {
   font-family: "Roboto Mono", monospace;
-  width: 80%;
+  width: 85%;
   max-width: 650px;
   height: 100vh;
   margin: 0 auto;
@@ -31,7 +31,7 @@
 }
 .todolist__title {
   width: 100%;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   font-family: "Alkatra", cursive;
   text-align: center;
   cursor: default;
@@ -136,7 +136,7 @@
 }
 .todolist__footer span {
   color: #868686;
-  font-size: 0.7rem;
+  font-size: 0.8rem;
 }
 .todolist__footer span a {
   color: #5f5f5f;
