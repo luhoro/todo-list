@@ -1,2 +1,186 @@
-@import './abstract/variables';
-@import './components/main';
+@import "./abstract/base";
+@import "./abstract/variables";
+@import "./abstract/animation";
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#button {
+  width: 50px;
+  height: 50px;
+  margin-top: 50px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  opacity: 0.7;
+  &:hover {
+    opacity: 1;
+  }
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.todolist {
+  color: var(--font-color);
+  font-family: var(--font-text);
+  width: 85%;
+  max-width: 650px;
+  height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__title {
+    width: 100%;
+    font-size: 1.6rem;
+    font-family: var(--font-title);
+    text-align: center;
+    cursor: default;
+  }
+
+  &__input {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    #inputTask {
+      font-family: var(--font-text);
+      width: 100%;
+      text-align: center;
+      padding: 0.5rem 0;
+      border: 1px solid var(--border-color);
+      border-radius: 15px;
+    }
+  }
+
+  &__list {
+    width: 100%;
+    .list {
+      list-style: none;
+      li {
+        border: 1px solid var(--border-color);
+        border-radius: 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0.8rem 0;
+        padding: 0.5rem 0.8rem;
+        transition: box-shadow 250ms ease;
+        position: relative;
+        cursor: default;
+
+        &.done {
+          text-decoration: line-through;
+        }
+        &.done .check {
+          background-color: var(--button-hover-color);
+        }
+
+        .check {
+          border-radius: 50%;
+          width: 15px;
+          height: 15px;
+          background-color: var(--button-color);
+          cursor: pointer;
+        }
+
+        button.remove {
+          border: none;
+          background-color: var(--erase-color);
+          width: 15px;
+          height: 15px;
+          border-radius: 50%;
+          opacity: 0;
+          transition: opacity 250ms ease-in-out;
+          cursor: pointer;
+        }
+
+        &.removed {
+          animation: collapseItem 300ms ease-out;
+        }
+
+        &.hidden {
+          display: none;
+        }
+      }
+    }
+  }
+
+  &__footer {
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    span {
+      color: var(--font-color-2);
+      font-size: 0.8rem;
+      a {
+        text-decoration: none;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+#inputTask {
+  &:focus {
+    outline: none;
+    box-shadow: 1px 1px 5px 1px var(--shadow-color);
+  }
+}
+
+.list {
+  li {
+    &.done .check:after {
+      position: absolute;
+      content: "";
+      display: block;
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+      background-color: var(--check-color);
+      top: 14px;
+      left: 16px;
+    }
+
+    &.hidden {
+      display: none;
+    }
+    &:hover {
+      box-shadow: 1px 1px 5px var(--shadow-color);
+    }
+    &:hover button.remove {
+      opacity: 1;
+    }
+
+    .check {
+      &:hover {
+        background-color: var(--button-hover-color);
+      }
+    }
+
+    button.remove {
+      &:hover {
+        background-color: var(--erase-hover-color);
+      }
+      &:active {
+        background-color: #b67d7d;
+      }
+    }
+  }
+}
+
+.todolist__footer {
+  a {
+    &:visited {
+      color: var(--font-color-2);
+    }
+
+    &:hover {
+      font-weight: 400;
+    }
+  }
+}

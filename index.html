@@ -1,39 +1,43 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>To Do List</title>
-   <link rel="stylesheet" href="./styles/style.css">
-</head>
-<body>
-   
-   <div class="todolist">
-     
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To Do List</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <button id="button">
+      <img src="./images/moon.svg" alt="">
+    </button>
+
+    <div class="todolist">
       <header class="todolist__title">
-         <h1>To-Do List </h1>
+        <h1>To-Do List</h1>
       </header>
 
       <section class="todolist__input">
-         <input id="inputTask" type="text" placeholder="Digite a sua tarefa e aperte enter">
+        <input
+          id="inputTask"
+          type="text"
+          placeholder="Digite a sua tarefa e aperte enter"
+        />
       </section>
 
       <section class="todolist__list">
-         <ul id="list" class="list">
-
-         </ul>
+        <ul id="list" class="list"></ul>
       </section>
-      
+
       <footer class="todolist__footer">
-         <span> Feito por 
-            <a href="https://github.com/luhoro" target="_blank" name="Meu github"> 
-               Luisa Horowitz
-            </a>
-         </span>
+        <span>
+          Feito por
+          <a href="https://github.com/luhoro" target="_blank" name="Meu github">
+            Luisa Horowitz
+          </a>
+        </span>
       </footer>
+    </div>
 
-   </div>
-
-   <script src="./js/main.js"></script>
-</body>
+    <script src="./js/main.js"></script>
+  </body>
 </html>

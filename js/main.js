@@ -1,4 +1,3 @@
-
 const Main = {
 
    //objeto de inicialização do programa
@@ -13,6 +12,8 @@ const Main = {
       this.$inputTask = document.querySelector('#inputTask')
       this.$list = document.querySelector('#list')
       this.$removeButtons = document.querySelectorAll('.remove')
+      this.$buttonDarkMode = document.querySelector('#button')
+      this.$imageDarkMode = document.querySelector('.img')
    },
 
    //adicionar eventos de clique
@@ -28,6 +29,9 @@ const Main = {
       this.$removeButtons.forEach(function(button) {
          button.onclick = self.Events.removeButton_click
       })
+
+      this.$buttonDarkMode.onclick = self.Events.buttonDarkMode_click.bind(this)
+   
    },
 
 
@@ -43,7 +47,6 @@ const Main = {
          const value = e.target.value
 
          if (key === 'Enter') {
-            console.log(this)
             this.$list.innerHTML += `
             <li>
                <div class="check"> </div>
@@ -69,6 +72,19 @@ const Main = {
          setTimeout(function(){
             li.classList.add('hidden')
          }, 300)
+      },
+
+      buttonDarkMode_click: function (e) {
+         let image = e.target
+         let body = image.offsetParent
+
+         if (body.classList == 'darkmode') {
+            image.setAttribute('src', './images/moon.svg')
+            body.classList.remove('darkmode')
+         } else {
+            image.setAttribute('src', './images/sun.svg')
+            body.classList.add('darkmode')
+         }
       }
 
    }
