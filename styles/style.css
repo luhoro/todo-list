@@ -1,4 +1,77 @@
+<<<<<<< HEAD
 @import url("https://fonts.googleapis.com/css2?family=Alkatra&family=Roboto+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alkatra&family=Roboto+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alkatra&family=Roboto+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alkatra&family=Roboto+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alkatra&family=Roboto+Mono&display=swap");
+=======
+@import url("https://fonts.googleapis.com/css2?family=Alkatra&display=swap");
+/* FONTS */
+/* COLORS */
+@import url("https://fonts.googleapis.com/css2?family=Alkatra&display=swap");
+>>>>>>> 927b63e (Add files via upload)
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+<<<<<<< HEAD
+::-moz-selection {
+  background-color: rgba(150, 150, 150, 0.3019607843);
+}
+
+::selection {
+  background-color: rgba(150, 150, 150, 0.3019607843);
+}
+
+:root {
+  --font-title: "Alkatra", cursive;
+  --font-text: "Roboto Mono", monospace;
+  --font-color: #0a0505;
+  --font-color-2: #868686;
+  --border-color: #8a8a8a;
+  --shadow-color: #a7a7a7;
+  --button-color: #bbbbbb;
+  --button-hover-color: #868686;
+  --check-color: #91e791;
+  --erase-color: #ffadad;
+  --erase-hover-color: #fa8484;
+}
+
+body {
+  transition: all 1s linear;
+}
+
+body.darkmode {
+  background: #000000;
+  --font-color: #e2e2e2;
+  --font-color-2: #c0c0c0;
+  --shadow-color: #777777;
+  --button-hover-color: #727272;
+  --check-color: #35e735;
+  --erase-color: #fa7a7a;
+  --erase-hover-color: #ff4343;
+  transition: all 1s linear;
+}
+body.darkmode #inputTask {
+  background-color: #d3d3d3;
+}
+body.darkmode #inputTask::-moz-placeholder {
+  color: #424242;
+}
+body.darkmode #inputTask::placeholder {
+  color: #424242;
+}
+
+@keyframes collapseItem {
+  0% {
+    transform: rotateX(0deg);
+  }
+  100% {
+    transform: rotateX(-90deg);
+  }
+}
 * {
   box-sizing: border-box;
   margin: 0;
@@ -88,7 +161,6 @@ body {
   font-family: var(--font-text);
   width: 85%;
   max-width: 650px;
-  height: 100vh;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -100,6 +172,68 @@ body {
   font-family: var(--font-title);
   text-align: center;
   cursor: default;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+::-moz-selection {
+  background-color: rgba(150, 150, 150, 0.3019607843);
+}
+
+::selection {
+  background-color: rgba(150, 150, 150, 0.3019607843);
+}
+
+:root {
+  --font-title: "Alkatra", cursive;
+  --font-text: "Roboto Mono", monospace;
+  --font-color: #0a0505;
+  --font-color-2: #868686;
+  --border-color: #8a8a8a;
+  --shadow-color: #a7a7a7;
+  --button-color: #bbbbbb;
+  --button-hover-color: #868686;
+  --check-color: #91e791;
+  --erase-color: #ffadad;
+  --erase-hover-color: #fa8484;
+}
+
+body {
+  transition: all 1s linear;
+}
+
+body.darkmode {
+  background: #000000;
+  --font-color: #e2e2e2;
+  --font-color-2: #c0c0c0;
+  --shadow-color: #777777;
+  --button-hover-color: #727272;
+  --check-color: #35e735;
+  --erase-color: #fa7a7a;
+  --erase-hover-color: #ff4343;
+  transition: all 1s linear;
+}
+body.darkmode #inputTask {
+  background-color: #d3d3d3;
+}
+body.darkmode #inputTask::-moz-placeholder {
+  color: #424242;
+}
+body.darkmode #inputTask::placeholder {
+  color: #424242;
+}
+
+@keyframes collapseItem {
+  0% {
+    transform: rotateX(0deg);
+  }
+  100% {
+    transform: rotateX(-90deg);
+  }
 }
 .todolist__input {
   width: 100%;
@@ -114,13 +248,114 @@ body {
   border: 1px solid var(--border-color);
   border-radius: 15px;
 }
+.todolist__input #inputTask:focus {
+  outline: none;
+  box-shadow: 1px 1px 5px 1px var(--shadow-color);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+::-moz-selection {
+  background-color: rgba(150, 150, 150, 0.3019607843);
+}
+
+::selection {
+  background-color: rgba(150, 150, 150, 0.3019607843);
+}
+
+:root {
+  --font-title: "Alkatra", cursive;
+  --font-text: "Roboto Mono", monospace;
+  --font-color: #0a0505;
+  --font-color-2: #868686;
+  --border-color: #8a8a8a;
+  --shadow-color: #a7a7a7;
+  --button-color: #bbbbbb;
+  --button-hover-color: #868686;
+  --check-color: #91e791;
+  --erase-color: #ffadad;
+  --erase-hover-color: #fa8484;
+}
+
+body {
+  transition: all 1s linear;
+}
+
+body.darkmode {
+  background: #000000;
+  --font-color: #e2e2e2;
+  --font-color-2: #c0c0c0;
+  --shadow-color: #777777;
+  --button-hover-color: #727272;
+  --check-color: #35e735;
+  --erase-color: #fa7a7a;
+  --erase-hover-color: #ff4343;
+  transition: all 1s linear;
+}
+body.darkmode #inputTask {
+  background-color: #d3d3d3;
+}
+body.darkmode #inputTask::-moz-placeholder {
+  color: #424242;
+}
+body.darkmode #inputTask::placeholder {
+  color: #424242;
+}
+
+@keyframes collapseItem {
+  0% {
+    transform: rotateX(0deg);
+  }
+  100% {
+    transform: rotateX(-90deg);
+  }
+}
 .todolist__list {
   width: 100%;
+=======
+/* FONTS */
+/* COLORS */
+.container {
+  width: 100%;
+  max-width: 600px;
+}
+
+.todolist {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+.todolist__title {
+  font-size: 1.5rem;
+  font-family: "Alkatra", cursive;
+  text-align: center;
+}
+.todolist__input {
+  padding: 10px;
+  text-align: center;
+}
+.todolist__input #inputTask {
+  text-align: center;
+  padding: 5px 0;
+  width: 250px;
+  border: 1px solid gray;
+  border-radius: 12px;
+}
+.todolist__input #inputTask:focus {
+  border: none;
+  box-shadow: 1px 1px 5px 5px black;
+>>>>>>> 927b63e (Add files via upload)
 }
 .todolist__list .list {
   list-style: none;
 }
 .todolist__list .list li {
+<<<<<<< HEAD
   border: 1px solid var(--border-color);
   border-radius: 15px;
   display: flex;
@@ -132,11 +367,35 @@ body {
   position: relative;
   cursor: default;
 }
+.todolist__list .list li.removed {
+  animation: collapseItem 300ms ease-out;
+}
+.todolist__list .list li.hidden {
+  display: none;
+}
+.todolist__list .list li:hover {
+  box-shadow: 1px 1px 5px var(--shadow-color);
+}
+.todolist__list .list li:hover button.remove {
+  opacity: 1;
+}
+
 .todolist__list .list li.done {
   text-decoration: line-through;
 }
 .todolist__list .list li.done .check {
   background-color: var(--button-hover-color);
+}
+.todolist__list .list li.done .check:after {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background-color: var(--check-color);
+  top: 14px;
+  left: 16px;
 }
 .todolist__list .list li .check {
   border-radius: 50%;
@@ -145,7 +404,11 @@ body {
   background-color: var(--button-color);
   cursor: pointer;
 }
-.todolist__list .list li button.remove {
+.todolist__list .list li .check:hover {
+  background-color: var(--button-hover-color);
+}
+
+.todolist__list .list button.remove {
   border: none;
   background-color: var(--erase-color);
   width: 15px;
@@ -155,11 +418,73 @@ body {
   transition: opacity 250ms ease-in-out;
   cursor: pointer;
 }
-.todolist__list .list li.removed {
-  animation: collapseItem 300ms ease-out;
+.todolist__list .list button.remove:hover {
+  background-color: var(--erase-hover-color);
 }
-.todolist__list .list li.hidden {
-  display: none;
+.todolist__list .list button.remove:active {
+  background-color: #b67d7d;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+::-moz-selection {
+  background-color: rgba(150, 150, 150, 0.3019607843);
+}
+
+::selection {
+  background-color: rgba(150, 150, 150, 0.3019607843);
+}
+
+:root {
+  --font-title: "Alkatra", cursive;
+  --font-text: "Roboto Mono", monospace;
+  --font-color: #0a0505;
+  --font-color-2: #868686;
+  --border-color: #8a8a8a;
+  --shadow-color: #a7a7a7;
+  --button-color: #bbbbbb;
+  --button-hover-color: #868686;
+  --check-color: #91e791;
+  --erase-color: #ffadad;
+  --erase-hover-color: #fa8484;
+}
+
+body {
+  transition: all 1s linear;
+}
+
+body.darkmode {
+  background: #000000;
+  --font-color: #e2e2e2;
+  --font-color-2: #c0c0c0;
+  --shadow-color: #777777;
+  --button-hover-color: #727272;
+  --check-color: #35e735;
+  --erase-color: #fa7a7a;
+  --erase-hover-color: #ff4343;
+  transition: all 1s linear;
+}
+body.darkmode #inputTask {
+  background-color: #d3d3d3;
+}
+body.darkmode #inputTask::-moz-placeholder {
+  color: #424242;
+}
+body.darkmode #inputTask::placeholder {
+  color: #424242;
+}
+
+@keyframes collapseItem {
+  0% {
+    transform: rotateX(0deg);
+  }
+  100% {
+    transform: rotateX(-90deg);
+  }
 }
 .todolist__footer {
   width: 100%;
@@ -174,45 +499,13 @@ body {
   text-decoration: none;
   font-weight: bold;
 }
-
-#inputTask:focus {
-  outline: none;
-  box-shadow: 1px 1px 5px 1px var(--shadow-color);
-}
-
-.list li.done .check:after {
-  position: absolute;
-  content: "";
-  display: block;
-  width: 9px;
-  height: 9px;
-  border-radius: 50%;
-  background-color: var(--check-color);
-  top: 14px;
-  left: 16px;
-}
-.list li.hidden {
-  display: none;
-}
-.list li:hover {
-  box-shadow: 1px 1px 5px var(--shadow-color);
-}
-.list li:hover button.remove {
-  opacity: 1;
-}
-.list li .check:hover {
-  background-color: var(--button-hover-color);
-}
-.list li button.remove:hover {
-  background-color: var(--erase-hover-color);
-}
-.list li button.remove:active {
-  background-color: #b67d7d;
-}
-
-.todolist__footer a:visited {
-  color: var(--font-color-2);
-}
-.todolist__footer a:hover {
+.todolist__footer span a:hover {
   font-weight: 400;
+}
+.todolist__footer span a:visited {
+  color: var(--font-color-2);
+=======
+  display: flex;
+  justify-content: space-between;
+>>>>>>> 927b63e (Add files via upload)
 }/*# sourceMappingURL=style.css.map */

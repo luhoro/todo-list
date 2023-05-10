@@ -1,0 +1,96 @@
+@import "../abstract/base";
+@import "../abstract/variables";
+@import "../abstract/animation";
+
+.todolist__list {
+  width: 100%;
+  .list {
+    list-style: none;
+
+    li {
+      border: 1px solid var(--border-color);
+      border-radius: 15px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 0.8rem 0;
+      padding: 0.5rem 0.8rem;
+      transition: box-shadow 250ms ease;
+      position: relative;
+      cursor: default;
+
+      &.removed {
+        animation: collapseItem 300ms ease-out;
+      }
+
+      &.hidden {
+        display: none;
+      }
+
+      &:hover {
+        box-shadow: 1px 1px 5px var(--shadow-color);
+      }
+
+      &:hover button.remove {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.todolist__list {
+  .list {
+    li {
+      &.done {
+        text-decoration: line-through;
+      }
+      &.done .check {
+        background-color: var(--button-hover-color);
+      }
+      &.done .check:after {
+        position: absolute;
+        content: "";
+        display: block;
+        width: 9px;
+        height: 9px;
+        border-radius: 50%;
+        background-color: var(--check-color);
+        top: 14px;
+        left: 16px;
+      }
+
+      .check {
+        border-radius: 50%;
+        width: 15px;
+        height: 15px;
+        background-color: var(--button-color);
+        cursor: pointer;
+
+        &:hover {
+          background-color: var(--button-hover-color);
+        }
+      }
+    }
+  }
+}
+
+.todolist__list {
+  .list {
+    button.remove {
+      border: none;
+      background-color: var(--erase-color);
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      opacity: 0;
+      transition: opacity 250ms ease-in-out;
+      cursor: pointer;
+      &:hover {
+        background-color: var(--erase-hover-color);
+      }
+      &:active {
+        background-color: #b67d7d;
+      }
+    }
+  }
+}

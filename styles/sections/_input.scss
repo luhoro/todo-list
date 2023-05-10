@@ -1,0 +1,21 @@
+@import "../abstract/base";
+@import "../abstract/variables";
+@import "../abstract/animation";
+
+.todolist__input {
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+  #inputTask {
+    font-family: var(--font-text);
+    width: 100%;
+    text-align: center;
+    padding: 0.5rem 0;
+    border: 1px solid var(--border-color);
+    border-radius: 15px;
+    &:focus {
+      outline: none;
+      box-shadow: 1px 1px 5px 1px var(--shadow-color);
+    }
+  }
+}
