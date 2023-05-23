@@ -1,50 +1,48 @@
-@import url('https://fonts.googleapis.com/css2?family=Alkatra&family=Roboto+Mono&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Alkatra&family=Roboto+Mono&display=swap");
 
 :root {
-    --font-title: 'Alkatra', cursive;
-    --font-text: 'Roboto Mono', monospace;
+	--font-title: "Alkatra", cursive;
+	--font-text: "Roboto Mono", monospace;
 
-    --font-color: #0a0505;
-    --font-color-2: #868686;
+	--font-color: #0a0505;
+	--font-color-2: #868686;
 
-    --border-color: #8a8a8a;
-    --shadow-color: #a7a7a7;
+	--border-color: #8a8a8a;
+	--shadow-color: #a7a7a7;
 
-    --button-color: #bbbbbb;
-    --button-hover-color: #868686;
+	--button-color: #bbbbbb;
+	--button-hover-color: #868686;
 
-    --check-color: #91e791;
-    --erase-color: #ffadad;
-    --erase-hover-color: #fa8484;
+	--check-color: #91e791;
+	--erase-color: #ffadad;
+	--erase-hover-color: #fa8484;
 }
 
 body {
-    transition: all 1s linear;
+	transition: all 1s linear;
 }
 
-
+// CONFIGS DARK MODE
 body.darkmode {
-    background: #000000;
+	background: #000000;
 
-    --font-color: #e2e2e2;
-    --font-color-2: #c0c0c0;
-    
-    --shadow-color: #777777;
-    
-    --button-hover-color: #727272;
-    
-    --check-color: #35e735;
-    --erase-color: #fa7a7a;
-    --erase-hover-color: #ff4343;
+	--font-color: #e2e2e2;
+	--font-color-2: #c0c0c0;
 
-    #inputTask {
-        background-color: #d3d3d3;
-        &::placeholder {
-            color: #424242;
-        }
-    }
+	--shadow-color: #777777;
 
-    transition: all 1s linear;
+	--button-hover-color: #727272;
+
+	--check-color: #35e735;
+	--erase-color: #fa7a7a;
+	--erase-hover-color: #ff4343;
+
+	#inputTask {
+		background-color: #d3d3d3;
+		&::placeholder {
+			color: #424242;
+		}
+	}
+
+	transition: all 1s linear;
 }
-
-

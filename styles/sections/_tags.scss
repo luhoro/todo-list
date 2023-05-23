@@ -1,0 +1,12 @@
+@import "../abstract/base";
+@import "../abstract/variables";
+
+.todolist__tags {
+	display: flex;
+	gap: 20px;
+
+	.tag {
+		font-size: 0.8rem;
+		padding: 4px 8px;
+	}
+}
