@@ -1,12 +1,18 @@
 @import "../abstract/base";
-@import "../abstract/variables";
 
 .todolist__tags {
 	display: flex;
-	gap: 20px;
+	gap: 30px;
 
 	.tag {
 		font-size: 0.8rem;
-		padding: 4px 8px;
+		padding: 2px 14px;
+		font-family: var(--font-text);
+		font-weight: bold;
+		border: none;
+		border-radius: 8px;
+		cursor: pointer;
+		background-color: var(--button-tag);
+		color: var(--font-text);
 	}
 }

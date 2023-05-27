@@ -3,6 +3,51 @@
 @import url("https://fonts.googleapis.com/css2?family=Alkatra&family=Roboto+Mono&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Alkatra&family=Roboto+Mono&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Alkatra&family=Roboto+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alkatra&family=Roboto+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alkatra&family=Roboto+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alkatra&family=Roboto+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alkatra&family=Roboto+Mono&display=swap");
+:root {
+  --font-title: "Alkatra", cursive;
+  --font-text: "Roboto Mono", monospace;
+  --font-color: #0a0505;
+  --font-color-2: #868686;
+  --border-color: #8a8a8a;
+  --shadow-color: #a7a7a7;
+  --button-color: #bbbbbb;
+  --button-hover-color: #868686;
+  --button-tag: #f0f0f0;
+  --check-color: #91e791;
+  --erase-color: #ffadad;
+  --erase-hover-color: #fa8484;
+}
+
+body {
+  transition: all 1s linear;
+}
+
+body.darkmode {
+  background: #000000;
+  --font-color: #e2e2e2;
+  --font-color-2: #c0c0c0;
+  --shadow-color: #777777;
+  --button-hover-color: #727272;
+  --button-tag: #424242;
+  --check-color: #35e735;
+  --erase-color: #fa7a7a;
+  --erase-hover-color: #ff4343;
+  transition: all 1s linear;
+}
+body.darkmode #inputTask {
+  background-color: #d3d3d3;
+}
+body.darkmode #inputTask::-moz-placeholder {
+  color: #424242;
+}
+body.darkmode #inputTask::placeholder {
+  color: #424242;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -16,6 +61,7 @@ body {
   height: 100vh;
   justify-content: space-between;
   color: var(--font-color);
+  font-family: var(--font-text);
 }
 
 body > div {
@@ -52,6 +98,7 @@ li {
   --shadow-color: #a7a7a7;
   --button-color: #bbbbbb;
   --button-hover-color: #868686;
+  --button-tag: #f0f0f0;
   --check-color: #91e791;
   --erase-color: #ffadad;
   --erase-hover-color: #fa8484;
@@ -67,6 +114,7 @@ body.darkmode {
   --font-color-2: #c0c0c0;
   --shadow-color: #777777;
   --button-hover-color: #727272;
+  --button-tag: #424242;
   --check-color: #35e735;
   --erase-color: #fa7a7a;
   --erase-hover-color: #ff4343;
@@ -107,6 +155,47 @@ body.darkmode #inputTask::placeholder {
   cursor: default;
 }
 
+:root {
+  --font-title: "Alkatra", cursive;
+  --font-text: "Roboto Mono", monospace;
+  --font-color: #0a0505;
+  --font-color-2: #868686;
+  --border-color: #8a8a8a;
+  --shadow-color: #a7a7a7;
+  --button-color: #bbbbbb;
+  --button-hover-color: #868686;
+  --button-tag: #f0f0f0;
+  --check-color: #91e791;
+  --erase-color: #ffadad;
+  --erase-hover-color: #fa8484;
+}
+
+body {
+  transition: all 1s linear;
+}
+
+body.darkmode {
+  background: #000000;
+  --font-color: #e2e2e2;
+  --font-color-2: #c0c0c0;
+  --shadow-color: #777777;
+  --button-hover-color: #727272;
+  --button-tag: #424242;
+  --check-color: #35e735;
+  --erase-color: #fa7a7a;
+  --erase-hover-color: #ff4343;
+  transition: all 1s linear;
+}
+body.darkmode #inputTask {
+  background-color: #d3d3d3;
+}
+body.darkmode #inputTask::-moz-placeholder {
+  color: #424242;
+}
+body.darkmode #inputTask::placeholder {
+  color: #424242;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -120,6 +209,7 @@ body {
   height: 100vh;
   justify-content: space-between;
   color: var(--font-color);
+  font-family: var(--font-text);
 }
 
 body > div {
@@ -156,6 +246,7 @@ li {
   --shadow-color: #a7a7a7;
   --button-color: #bbbbbb;
   --button-hover-color: #868686;
+  --button-tag: #f0f0f0;
   --check-color: #91e791;
   --erase-color: #ffadad;
   --erase-hover-color: #fa8484;
@@ -171,6 +262,7 @@ body.darkmode {
   --font-color-2: #c0c0c0;
   --shadow-color: #777777;
   --button-hover-color: #727272;
+  --button-tag: #424242;
   --check-color: #35e735;
   --erase-color: #fa7a7a;
   --erase-hover-color: #ff4343;
@@ -204,46 +296,6 @@ body.darkmode #inputTask::placeholder {
   box-shadow: 1px 1px 5px 1px var(--shadow-color);
 }
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: 100vh;
-  justify-content: space-between;
-  color: var(--font-color);
-}
-
-body > div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-}
-
-li {
-  list-style: none;
-}
-
-.container {
-  width: 85%;
-  max-width: 650px;
-  margin: 0 auto;
-}
-
-::-moz-selection {
-  background-color: rgba(150, 150, 150, 0.3019607843);
-}
-
-::selection {
-  background-color: rgba(150, 150, 150, 0.3019607843);
-}
-
 :root {
   --font-title: "Alkatra", cursive;
   --font-text: "Roboto Mono", monospace;
@@ -253,6 +305,7 @@ li {
   --shadow-color: #a7a7a7;
   --button-color: #bbbbbb;
   --button-hover-color: #868686;
+  --button-tag: #f0f0f0;
   --check-color: #91e791;
   --erase-color: #ffadad;
   --erase-hover-color: #fa8484;
@@ -268,6 +321,7 @@ body.darkmode {
   --font-color-2: #c0c0c0;
   --shadow-color: #777777;
   --button-hover-color: #727272;
+  --button-tag: #424242;
   --check-color: #35e735;
   --erase-color: #fa7a7a;
   --erase-hover-color: #ff4343;
@@ -283,13 +337,102 @@ body.darkmode #inputTask::placeholder {
   color: #424242;
 }
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  justify-content: space-between;
+  color: var(--font-color);
+  font-family: var(--font-text);
+}
+
+body > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  width: 85%;
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+::-moz-selection {
+  background-color: rgba(150, 150, 150, 0.3019607843);
+}
+
+::selection {
+  background-color: rgba(150, 150, 150, 0.3019607843);
+}
+
 .todolist__tags {
   display: flex;
-  gap: 20px;
+  gap: 30px;
 }
 .todolist__tags .tag {
   font-size: 0.8rem;
-  padding: 4px 8px;
+  padding: 2px 14px;
+  font-family: var(--font-text);
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: var(--button-tag);
+  color: var(--font-text);
+}
+
+:root {
+  --font-title: "Alkatra", cursive;
+  --font-text: "Roboto Mono", monospace;
+  --font-color: #0a0505;
+  --font-color-2: #868686;
+  --border-color: #8a8a8a;
+  --shadow-color: #a7a7a7;
+  --button-color: #bbbbbb;
+  --button-hover-color: #868686;
+  --button-tag: #f0f0f0;
+  --check-color: #91e791;
+  --erase-color: #ffadad;
+  --erase-hover-color: #fa8484;
+}
+
+body {
+  transition: all 1s linear;
+}
+
+body.darkmode {
+  background: #000000;
+  --font-color: #e2e2e2;
+  --font-color-2: #c0c0c0;
+  --shadow-color: #777777;
+  --button-hover-color: #727272;
+  --button-tag: #424242;
+  --check-color: #35e735;
+  --erase-color: #fa7a7a;
+  --erase-hover-color: #ff4343;
+  transition: all 1s linear;
+}
+body.darkmode #inputTask {
+  background-color: #d3d3d3;
+}
+body.darkmode #inputTask::-moz-placeholder {
+  color: #424242;
+}
+body.darkmode #inputTask::placeholder {
+  color: #424242;
 }
 
 * {
@@ -305,6 +448,7 @@ body {
   height: 100vh;
   justify-content: space-between;
   color: var(--font-color);
+  font-family: var(--font-text);
 }
 
 body > div {
@@ -341,6 +485,7 @@ li {
   --shadow-color: #a7a7a7;
   --button-color: #bbbbbb;
   --button-hover-color: #868686;
+  --button-tag: #f0f0f0;
   --check-color: #91e791;
   --erase-color: #ffadad;
   --erase-hover-color: #fa8484;
@@ -356,6 +501,7 @@ body.darkmode {
   --font-color-2: #c0c0c0;
   --shadow-color: #777777;
   --button-hover-color: #727272;
+  --button-tag: #424242;
   --check-color: #35e735;
   --erase-color: #fa7a7a;
   --erase-hover-color: #ff4343;
@@ -452,6 +598,47 @@ body.darkmode #inputTask::placeholder {
   background-color: #b67d7d;
 }
 
+:root {
+  --font-title: "Alkatra", cursive;
+  --font-text: "Roboto Mono", monospace;
+  --font-color: #0a0505;
+  --font-color-2: #868686;
+  --border-color: #8a8a8a;
+  --shadow-color: #a7a7a7;
+  --button-color: #bbbbbb;
+  --button-hover-color: #868686;
+  --button-tag: #f0f0f0;
+  --check-color: #91e791;
+  --erase-color: #ffadad;
+  --erase-hover-color: #fa8484;
+}
+
+body {
+  transition: all 1s linear;
+}
+
+body.darkmode {
+  background: #000000;
+  --font-color: #e2e2e2;
+  --font-color-2: #c0c0c0;
+  --shadow-color: #777777;
+  --button-hover-color: #727272;
+  --button-tag: #424242;
+  --check-color: #35e735;
+  --erase-color: #fa7a7a;
+  --erase-hover-color: #ff4343;
+  transition: all 1s linear;
+}
+body.darkmode #inputTask {
+  background-color: #d3d3d3;
+}
+body.darkmode #inputTask::-moz-placeholder {
+  color: #424242;
+}
+body.darkmode #inputTask::placeholder {
+  color: #424242;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -465,6 +652,7 @@ body {
   height: 100vh;
   justify-content: space-between;
   color: var(--font-color);
+  font-family: var(--font-text);
 }
 
 body > div {
@@ -501,6 +689,7 @@ li {
   --shadow-color: #a7a7a7;
   --button-color: #bbbbbb;
   --button-hover-color: #868686;
+  --button-tag: #f0f0f0;
   --check-color: #91e791;
   --erase-color: #ffadad;
   --erase-hover-color: #fa8484;
@@ -516,6 +705,7 @@ body.darkmode {
   --font-color-2: #c0c0c0;
   --shadow-color: #777777;
   --button-hover-color: #727272;
+  --button-tag: #424242;
   --check-color: #35e735;
   --erase-color: #fa7a7a;
   --erase-hover-color: #ff4343;
